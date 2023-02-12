@@ -1,11 +1,45 @@
 *,
-**::before,
-**::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-.content {
-  display: grid;
+body {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 1px;
+}
+
+main {
+  text-align: center;
+  padding: 1.5em 1em;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  margin-bottom: 2em;
+  inline-size: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 12px 60px;
+  margin: 1em;
 }
