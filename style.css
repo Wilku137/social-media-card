@@ -2,136 +2,74 @@
 **::before,
 **::after {
   box-sizing: border-box;
-}
-
-:root {
-  --primary-clr: #e0c9a6;
-  --second-clr: black;
-  --third--clr: #dc5400;
-}
-
-body {
-  margin: 0;
   padding: 0;
-  background-color: var(--primary-clr);
-  font-family: "Shantell Sans", cursive;
-}
-
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  margin: 0;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100vh;
-}
-
-/* Navigation styles */
-
-header {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 1rem;
-  background-color: var(--third--clr);
-  color: #ecf0f3;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
-header p {
-  font-size: 45px;
-  margin: 0.7rem 0rem;
-  grid-column-start: span 2;
-}
-
-header p::before {
-  content: ".";
-  color: black;
-}
-
-header ul {
+main {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
-  list-style: none;
-  padding: 0.5rem;
-  /* margin-right: 2rem; */
-  font-size: 20px;
 }
 
-header a {
+img {
+  display: block;
+  margin: auto;
+  width: 55px;
+  height: 55px;
+  padding-top: 2em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  width: 320px;
+  font-size: large;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.instagram {
+  color: white;
+  background-color: #e1306c;
+}
+
+.twitter {
+  border: solid 2px;
+}
+
+.youtube {
+  border: solid 2px;
+}
+a {
   text-decoration: none;
-  color: #fff;
+  color: white;
+  background-color: black;
+  padding: 12px 80px;
+  border-radius: 25px;
 }
 
-header a:hover {
-  color: var(--primary-clr);
+p {
+  padding: 1em;
 }
 
-/* end navigation style */
-
-/* Pieseczeki */
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+.links {
+  border-radius: 25px;
+  font-size: 15px;
+  margin-top: 3em;
 }
 
-.dogs__card {
-  display: grid;
-  grid-template-rows: row;
-  gap: 1rem;
-}
-
-/* .dogs__card img {
-  max-width: fit-content;
-} */
-
-.dogs__card p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  font-weight: bolder;
-  color: var(--secondary-clr);
-}
-
-.dogs__card--golden {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.dogs__card--samoyed {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.dogs__card button {
-  border-radius: 10px;
-  padding: 1rem 3rem;
-  border: transparent;
-  font-size: 20px;
-  font-family: "Shantell Sans", cursive;
-  font-weight: bolder;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
-  color: var(--secondary-clr);
-}
-
-.dogs__card--golden button {
-  background-color: var(--third--clr);
-}
-
-.dogs__card--samoyed button {
-  background-color: #afc1cb;
-}
-
-@media (min-width: 800px) {
-  .dogs__card {
-    grid-template-columns: 40% 20% 40%;
+/* @media (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-}
+} */
